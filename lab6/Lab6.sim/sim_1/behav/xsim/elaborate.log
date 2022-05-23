@@ -1,0 +1,18 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3b940388f1364fe1825d21635e711ed8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PipeLine_Sim_behav xil_defaultlib.PipeLine_Sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegD
+Compiling module xil_defaultlib.Inm
+Compiling module xil_defaultlib.Sum
+Compiling module xil_defaultlib.Dif
+Compiling module xil_defaultlib.PipeLine
+Compiling module xil_defaultlib.PipeLine_Sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PipeLine_Sim_behav

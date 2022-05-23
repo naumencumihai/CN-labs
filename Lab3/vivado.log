@@ -1,0 +1,1049 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr  5 19:59:04 2021
+# Process ID: 1236
+# Current directory: C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9436 C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.xpr
+# Log file: C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/vivado.log
+# Journal file: C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/naume/OneDrive/Desktop/Materiale Semestru II/CN/Labs/Lab3' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.gen/sources_1', nor could it be found using path 'C:/Users/naume/OneDrive/Desktop/Materiale Semestru II/CN/Labs/Lab3/Lab3.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v} w ]
+add_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v}}
+update_compile_order -fileset sources_1
+set_property top final_block [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top final_block [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v}}
+update_compile_order -fileset sim_1
+set_property top final_block_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xelab -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/naume/OneDrive/Desktop/Facultate/Materiale -notrace
+couldn't read file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  5 20:12:54 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.621 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1002.621 ; gain = 0.000
+add_bp {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v} 11
+remove_bps -file {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v} -line 11
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_sim.v}}
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xelab -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1002.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_sim.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_sim.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v}}
+update_compile_order -fileset sources_1
+set_property top numarator [current_fileset]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'numarator_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj numarator_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/numarator_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xelab -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot numarator_sim_behav xil_defaultlib.numarator_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot numarator_sim_behav xil_defaultlib.numarator_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.numarator_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot numarator_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/naume/OneDrive/Desktop/Facultate/Materiale -notrace
+couldn't read file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  5 21:08:15 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "numarator_sim_behav -key {Behavioral:sim_1:Functional:numarator_sim} -tclbatch {numarator_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source numarator_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'numarator_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1002.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'numarator_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj numarator_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/numarator_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xelab -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot numarator_sim_behav xil_defaultlib.numarator_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot numarator_sim_behav xil_defaultlib.numarator_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.numarator_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot numarator_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "numarator_sim_behav -key {Behavioral:sim_1:Functional:numarator_sim} -tclbatch {numarator_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source numarator_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'numarator_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1002.621 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_simulare.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_simulare.v}}
+update_compile_order -fileset sim_1
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v} w ]
+add_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sources_1/new/final_block.v}}
+update_compile_order -fileset sources_1
+set_property top final_block [current_fileset]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_simulare.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_simulare.v}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v}}
+update_compile_order -fileset sim_1
+set_property top final_block_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/bin2bcd_sim.v}}
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.srcs\sources_1\new\final_block.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.srcs\sim_1\new\bin2bcd_simulare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.srcs\sim_1\new\numarator_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.srcs\sim_1\new\bin2bcd_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.srcs\sim_1\new\final_block_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\naume\OneDrive\Desktop\Facultate\Materiale Semestru II\CN\Labs\Lab3\Lab3.srcs\sources_1\new\bin2bcd.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+"xelab -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 59151fa1fafb4bb099af64eb1e77e547 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab3/Lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+create_project Lab03 {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1597.250 ; gain = 0.000
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new
+file mkdir {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new}
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v} w ]
+add_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v} w ]
+add_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v}}
+update_compile_order -fileset sources_1
+current_project Lab3
+current_project Lab03
+set_property top numarator [current_fileset]
+update_compile_order -fileset sources_1
+current_project Lab3
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new
+current_project Lab03
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new
+file mkdir {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new}
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/numarator_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/numarator_sim.v}}
+update_compile_order -fileset sim_1
+set_property top numarator_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'numarator_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj numarator_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/numarator_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot numarator_sim_behav xil_defaultlib.numarator_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot numarator_sim_behav xil_defaultlib.numarator_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.numarator_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot numarator_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/naume/OneDrive/Desktop/Facultate/Materiale -notrace
+couldn't read file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  5 21:24:43 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "numarator_sim_behav -key {Behavioral:sim_1:Functional:numarator_sim} -tclbatch {numarator_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source numarator_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'numarator_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1597.250 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v} w ]
+add_files {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v}}
+current_project Lab3
+current_project Lab03
+update_compile_order -fileset sources_1
+set_property top final_block [current_fileset]
+update_compile_order -fileset sources_1
+current_project Lab3
+current_project Lab03
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v}}
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/bin2bcd_sim.v} w ]
+add_files -fileset sim_1 {{C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/bin2bcd_sim.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property top final_block_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/naume/OneDrive/Desktop/Facultate/Materiale -notrace
+couldn't read file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  5 21:30:25 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1597.250 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:11]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'carry_out' [C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v:12]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'final_block_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj final_block_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/final_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sources_1/new/numarator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module numarator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.srcs/sim_1/new/final_block_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_block_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 25165ac05ff74946babc5f19b45e8492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot final_block_sim_behav xil_defaultlib.final_block_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.numarator
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.final_block
+Compiling module xil_defaultlib.final_block_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot final_block_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/naume/OneDrive/Desktop/Facultate/Materiale Semestru II/CN/Labs/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "final_block_sim_behav -key {Behavioral:sim_1:Functional:final_block_sim} -tclbatch {final_block_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source final_block_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'final_block_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1597.250 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  5 22:32:37 2021...
